@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alchemy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="home">
+      <header><b>Alchemy</b></header>
+      <nav>
+        <div class="topdiv">
+        <a href="#temperature"><button class="topmenu">Temperature</button></a>
+        <a href="#weight"><button class="topmenu">Weight</button></a>
+        <a href="#distance"><button class="topmenu">Distance</button></a></div>
+      </nav>
+      </section>
+      <div style="clear:both;"></div>
+      <h1>Welcome to Alchemy</h1>
+      <p>Select a conversion type from the navigation menu.</p>
+
+      <div id="all-conversions">
+        <section id="temperature" class="b temperature">
+          <div id="tmp">
+            <figure>
+              <img
+                src="assets/thermostat.png"
+                width="150px"
+                alt=""
+              />
+              <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+              
+              
+            </figure><article>
+                <fieldset>
+                  <legend>Temperature</legend>
+                  <label for="celsius">Celsius</label><br/>
+                  <input type="number" id="celsius"><br/>
+
+                  <button id=temperature>Convert</button><br/>
+
+                  <input type="number" id="fahrenheit"><br/>
+                  <label for="fahrenheit">Fahrenheit</label>
+                </fieldset><aside>
+                To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+              </aside>
+              </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="weight" class="b weight">
+          <div id="wgt">
+            <figure>
+              <img
+                src="assets/weight.png"
+                width="150px"
+                alt=""
+              />
+              <figcaption>Pound to Kilogram Conversion</figcaption>
+              
+              
+            </figure><article>
+                <fieldset>
+                  <legend>Weight</legend>
+                  <label for="pound">Pound</label><br/>
+                  <input type="number" id="pound"><br/>
+
+                  <button id=weight>Convert</button><br/>
+
+                  <input type="number" id="kilogram"><br/>
+                  <label for="kilogram">Kilogram</label>
+                </fieldset><aside>
+                To convert pounds to kilograms yourself, use this formula replacing the `P` with your weight in pounds: P / 2.2046
+              </aside>
+              </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="distance" class="b distance">
+          <div id="dist">
+            <figure>
+              <img
+                src="assets/distance.png"
+                width="150px"
+                alt=""
+              />
+              <figcaption>Mile to Kilometer Conversion</figcaption>
+              
+              
+            </figure><article>
+                <fieldset>
+                  <legend>Distance</legend>
+                  <label for="mile">Mile</label><br/>
+                  <input type="number" id="mile"><br/>
+
+                  <button id=distance>Convert</button><br/>
+
+                  <input type="number" id="kilometer"><br/>
+                  <label for="kilometer">Kilometer</label>
+                </fieldset><aside>
+                To convert miles to kilometers yourself, use this formula replacing the `M` with your distance in miles: M * 1.609344
+              </aside>
+              </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+          <div id="go-home" class="iconbutton">
+            <a href="#home">
+                <img src="assets/home_24dp_666666.png"/>
+            </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2025 Alchemy. All rights reserved. Created by HIMANSHI</p>
+      <div>
+        <p>Contact: 442himanshi@gmail.com</p>
+        <p><a href="https://github.com/codesH-himanshi" target="_blank"><img src="assets\GitHub_Logo_White.png" alt="" class="github"></a></p>
+        <p><a href="https://www.linkedin.com/in/442-himanshi/" target="_blank"><img src="assets\LI-In-Bug.png" alt="" class="linkedin"></a></p>
+      <p>Version: 1.0</p>
+      <p>Last Updated: 19-04-2025</p>
+      </div>
+      
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
