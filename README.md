@@ -16,4 +16,4 @@ HTML5 | CSS3 | JavaScript
 Node.js | Express  
 
 ## Deployment
-Hosted on [Render]([https://alchemy-33h9.onrender.com](https://alchemy-33h9.onrender.com))  
+Hosted on [Render](https://alchemy-33h9.onrender.com)  
