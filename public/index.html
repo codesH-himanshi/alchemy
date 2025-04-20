@@ -11,9 +11,8 @@
       <header><b>Alchemy</b></header>
       <nav>
         <div class="topdiv">
-        <a href="#temperature"><button class="topmenu">Temperature</button></a>
-        <a href="#weight"><button class="topmenu">Weight</button></a>
-        <a href="#distance"><button class="topmenu">Distance</button></a></div>
+        <button id="mode-toggle" class="topmenu">Calculator</button>
+      </div>
       </nav>
       </section>
       <div style="clear:both;"></div>
@@ -21,6 +20,11 @@
       <p>Select a conversion type from the navigation menu.</p>
 
       <div id="all-conversions">
+        <div class="topdiv">
+          <a href="#temperature"><button class="topmenu">Temperature</button></a>
+          <a href="#weight"><button class="topmenu">Weight</button></a>
+          <a href="#distance"><button class="topmenu">Distance</button></a>
+        </div>
         <section id="temperature" class="b temperature">
           <div id="tmp">
             <figure>
@@ -111,6 +115,48 @@
             </a>
         </div>
       </div>
+      <div id="cal-container" class="cal hidden">
+        <div class="history-panel">
+          <h3>History</h3>
+          <div id="history-list"></div>
+          <button id="clear-history" class="history-btn">Clear History</button>
+        </div>
+      <section id="calculator" class="b calculator">
+        <div class="calc-container">
+          <div class="calc-display">
+            <div id="calculation" class="calculation-history"></div>
+            <div id="display" class="current-input">0</div>
+          </div>
+          <div class="calc-buttons">
+            <button class="calc-btn operator" data-value="C">C</button>
+            <button class="calc-btn operator" data-value="⌫">⌫</button>
+            <button class="calc-btn operator" data-value="%">%</button>
+            <button class="calc-btn operator" data-value="/">/</button>
+            
+            <button class="calc-btn" data-value="7">7</button>
+            <button class="calc-btn" data-value="8">8</button>
+            <button class="calc-btn" data-value="9">9</button>
+            <button class="calc-btn operator" data-value="×">×</button>
+            
+            <button class="calc-btn" data-value="4">4</button>
+            <button class="calc-btn" data-value="5">5</button>
+            <button class="calc-btn" data-value="6">6</button>
+            <button class="calc-btn operator" data-value="-">−</button>
+            
+            <button class="calc-btn" data-value="1">1</button>
+            <button class="calc-btn" data-value="2">2</button>
+            <button class="calc-btn" data-value="3">3</button>
+            <button class="calc-btn operator" data-value="+">+</button>
+            
+            <button class="calc-btn zero" data-value="0">0</button>
+            <button class="calc-btn" data-value=".">.</button>
+            <button class="calc-btn operator" data-value="=">=</button>
+          </div>
+        </div>
+        <div class="keyboard-hint">
+          <small>Keyboard supported: 0-9, +-*/%, Enter(=), Escape(C), Backspace</small>
+        </div>
+      </section></div>
     </section>
     <footer>
       <p>© 2025 Alchemy. All rights reserved. Created by HIMANSHI</p>
